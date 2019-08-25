@@ -9,13 +9,16 @@
 import UIKit
 
 class Hello_ViewController: UIViewController {
-
-    var guest_name: String = ""
+    
+    var guest_name: String = "error"
+    var hello_pattern_number = 3
+    let hello_pattern = ["おはよう","こんにちは","こんばんは","error"]
+    @IBOutlet weak var hello_message: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        hello_message.text = "\(hello_pattern[hello_pattern_number])、\(guest_name)さん"
     }
     
 
