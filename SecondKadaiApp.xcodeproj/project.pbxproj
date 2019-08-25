@@ -12,6 +12,7 @@
 		B22B2C4123126A7E00E10C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22B2C3F23126A7E00E10C63 /* Main.storyboard */; };
 		B22B2C4323126A8000E10C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22B2C4223126A8000E10C63 /* Assets.xcassets */; };
 		B22B2C4623126A8000E10C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22B2C4423126A8000E10C63 /* LaunchScreen.storyboard */; };
+		B22B2C4E231270C600E10C63 /* Hello_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22B2C4D231270C600E10C63 /* Hello_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B22B2C4223126A8000E10C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B22B2C4523126A8000E10C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B22B2C4723126A8000E10C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B22B2C4D231270C600E10C63 /* Hello_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				B22B2C3B23126A7E00E10C63 /* AppDelegate.swift */,
 				B22B2C3D23126A7E00E10C63 /* ViewController.swift */,
+				B22B2C4D231270C600E10C63 /* Hello_ViewController.swift */,
 				B22B2C3F23126A7E00E10C63 /* Main.storyboard */,
 				B22B2C4223126A8000E10C63 /* Assets.xcassets */,
 				B22B2C4423126A8000E10C63 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22B2C4E231270C600E10C63 /* Hello_ViewController.swift in Sources */,
 				B22B2C3E23126A7E00E10C63 /* ViewController.swift in Sources */,
 				B22B2C3C23126A7E00E10C63 /* AppDelegate.swift in Sources */,
 			);
