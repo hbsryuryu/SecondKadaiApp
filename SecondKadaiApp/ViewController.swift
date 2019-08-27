@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         label_keikoku.text = ""
-        name_get.text = "例:大阪 太郎"
+        name_get.placeholder = "例:大阪 太郎"
         if (menu_pattern_number == 3){
             menu_pattern_number = 1
             label_tuuti.text = ""
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button_kettei(_ sender: Any) {
-        if (name_get.text! == "" || name_get.text! == "例:大阪 太郎"){
+        if (name_get.text! == ""){
             label_keikoku.text = "入力されていません！"
         }else if(name_get.text!.unicodeScalars.count >= 8){
             label_keikoku.text = "７文字以下で！"
@@ -44,18 +44,11 @@ class ViewController: UIViewController {
             self.performSegue(withIdentifier: "goto_hello", sender: nil)
         }
     }
-    
-    @IBAction func button_edit(_ sender: Any) {
-        if (name_get.text == "例:大阪 太郎"){
-            name_get.text = ""
-        }
-    }
+
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
         menu_pattern_number = Int(arc4random_uniform(UInt32(3)))
-        name_get.text = "例:大阪 太郎"
         label_tuuti.text = "\(menu_pattern_time[menu_pattern_number])になりました。"
-        // 他の画面から segue を使って戻ってきた時に呼ばれる
     }
     
 }
